@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess My Dice</title>
+    <link rel="icon" type="image/x-icon" href="fav_icon.png" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+
+  <body>
+    <div class="players">
+      <div class="player player-1">
+        <h1>Player 1</h1>
+        <h1 class="winnerText winner1txt">WINNER</h1>
+        <input type="text" class="guess player-1_guess" />
+        <button class="check checkPlayer1Guess">Check</button>
+      </div>
+      <div class="player player-2">
+        <h1>Player 2</h1>
+        <h1 class="winnerText winner2txt">WINNER</h1>
+        <input type="text" class="guess player-2_guess" />
+        <button class="check checkPlayer2Guess">Check</button>
+      </div>
+      <div class="guessLeft">
+        <div class="playerGuessNum">
+          Guess Left: <span class="GuessLeft player1GuessLeft">2</span>
+        </div>
+        <div class="playerGuessNum">
+          Guess Left: <span class="GuessLeft player2GuessLeft">2</span>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="game_title">Guess a number between 0 to 6</h2>
+    <img src="dice-1.png" alt="dice_img" class="dice_img" />
+    <button class="btn rollDice">Roll Dice</button>
+    <button class="btn newGame">New Game</button>
+    <div class="overlay">This Game is Only Playable in Desktop</div>
+  </body>
+</html>
